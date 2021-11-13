@@ -1,0 +1,27 @@
+package com.sentence;
+
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner myObj = new Scanner(System.in);
+
+    System.out.println("Enter Sentence, letter ");
+
+    // Sentence input
+    String sentence = myObj.nextLine();
+
+    // letter input
+    String letter = myObj.nextLine();
+
+    // Output input by user    
+    System.out.println("Sentence : " + sentence); 
+    System.out.println("Letter : " + letter); 
+    if(sentence.contains(letter)){
+    	System.out.println(sentence.substring(sentence.indexOf(letter) + 1)); 
+    }else{
+    	System.out.println("The letter doesn't exist in the sentence");
+    }
+    
+  }
+}
